@@ -68,7 +68,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
                         <span className={`px-2 py-1 text-[10px] font-code font-bold rounded-sm border uppercase tracking-wider ${badgeColorClass}`}>
                           {item.type}
                         </span>
-                        <span className="text-sm font-code text-text-muted">{item.period}</span>
+                        <span className="text-sm font-code text-text-secondary">{item.period}</span>
                       </div>
                       
                       <h3 className="text-2xl font-display font-bold text-text-primary mb-1">
@@ -76,7 +76,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
                       </h3>
                       <h4 className="text-lg text-text-secondary mb-4">
                         {item.company}
-                        {item.location && <span className="text-text-muted text-sm ml-2">| {item.location}</span>}
+                        {item.location && <span className="text-text-secondary text-sm ml-2">| {item.location}</span>}
                       </h4>
                       
                       <ul className="flex flex-col gap-2 mb-6">

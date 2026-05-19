@@ -36,7 +36,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
 
               {/* Stat bubbles */}
               <motion.div 
-                className="absolute -right-8 top-16 px-4 py-2 bg-bg-primary/80 backdrop-blur-md border border-white/10 rounded-lg shadow-xl"
+                className="absolute -right-4 md:-right-8 top-10 md:top-16 px-4 py-2 bg-bg-primary/80 backdrop-blur-md border border-white/10 rounded-lg shadow-xl z-10"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5 }}
@@ -47,7 +47,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
               </motion.div>
 
               <motion.div 
-                className="absolute -left-6 bottom-32 px-4 py-2 bg-bg-primary/80 backdrop-blur-md border border-white/10 rounded-lg shadow-xl"
+                className="absolute -left-4 md:-left-8 top-1/2 -translate-y-1/2 px-4 py-2 bg-bg-primary/80 backdrop-blur-md border border-white/10 rounded-lg shadow-xl z-10"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.7 }}
@@ -58,14 +58,14 @@ const About: React.FC<AboutProps> = ({ data }) => {
               </motion.div>
 
               <motion.div 
-                className="absolute -right-4 bottom-12 px-4 py-2 bg-bg-primary/80 backdrop-blur-md border border-white/10 rounded-lg shadow-xl"
+                className="absolute -right-4 md:-right-8 bottom-10 md:bottom-16 px-4 py-2 bg-bg-primary/80 backdrop-blur-md border border-white/10 rounded-lg shadow-xl z-10"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.9 }}
                 viewport={{ once: true }}
               >
                 <span className="text-xs font-code text-accent-green block mb-1">LOCATION</span>
-                <span className="text-sm font-medium">Hyderabad, India</span>
+                <span className="text-sm font-medium">Andhra Pradesh</span>
               </motion.div>
             </GlowCard>
           </motion.div>
@@ -78,7 +78,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <div className="flex flex-col gap-6 text-text-secondary text-lg leading-relaxed mb-10">
+            <div className="flex flex-col gap-6 text-text-primary drop-shadow-md text-lg leading-relaxed mb-10">
               {data.paragraphs.map((paragraph, index) => (
                 <motion.p key={index} variants={slideInRight}>
                   {paragraph}

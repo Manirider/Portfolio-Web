@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ data, socials }) => {
           </div>
           
           <div className="text-center">
-            <p className="text-sm text-text-muted">
+            <p className="text-sm text-text-secondary">
               Built with React + Framer Motion<br />
               Deployed on Vercel
             </p>
@@ -57,7 +57,7 @@ const Footer: React.FC<FooterProps> = ({ data, socials }) => {
           </div>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-xs text-text-muted">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-xs text-text-secondary">
           <p>© {currentYear} {data.name}. All rights reserved.</p>
           <button 
             onClick={scrollToTop}

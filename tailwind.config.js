@@ -7,15 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bg-primary': '#050508',
-        'bg-secondary': '#0D0D14',
-        'bg-card': '#111118',
+        'bg-primary': '#0A0A12',
+        'bg-secondary': '#12121E',
+        'bg-card': '#16162A',
         'accent-cyan': '#00D4FF',
         'accent-amber': '#FFB347',
         'accent-green': '#00FF88',
-        'text-primary': '#F0F0F8',
-        'text-secondary': '#8888AA',
-        'text-muted': '#444460',
+        'text-primary': '#FFFFFF',
+        'text-secondary': '#D0D0E8',
+        'text-muted': '#9898B8',
       },
       fontFamily: {
         'display': ['"Space Mono"', 'monospace'],

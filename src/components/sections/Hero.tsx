@@ -15,15 +15,13 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ data }) => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 grid-bg opacity-30 animate-pulse-glow pointer-events-none" />
-      <div className="glow-orb glow-orb-cyan w-[600px] h-[600px] top-[-200px] left-[-200px]" />
-      <div className="glow-orb glow-orb-amber w-[500px] h-[500px] bottom-[-100px] right-[-100px]" />
+      {/* Subtle background grid overlay on top of 3D */}
+      <div className="absolute inset-0 grid-bg opacity-20 pointer-events-none" />
 
       <div className="container-custom relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column - Content */}
+          {/* Left Column — Content (lg:col-span-7 leaves right side for 3D globe) */}
           <motion.div 
             className="lg:col-span-7 flex flex-col items-start"
             variants={staggerContainer}
@@ -65,7 +63,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
                     prefix={stat.prefix} 
                     suffix={stat.suffix} 
                   />
-                  <span className="text-sm font-body text-text-muted">{stat.label}</span>
+                  <span className="text-sm font-body text-text-secondary">{stat.label}</span>
                 </div>
               ))}
             </motion.div>
@@ -73,7 +71,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
             <motion.div variants={fadeInUp} className="flex flex-wrap items-center gap-4">
               <a 
                 href="#projects" 
-                className="px-8 py-3 bg-accent-cyan text-bg-primary font-bold rounded-md hover:bg-white hover:scale-105 transition-all shadow-[0_0_20px_rgba(0,212,255,0.3)]"
+                className="px-8 py-3 bg-accent-cyan text-bg-primary font-bold rounded-md hover:bg-white hover:scale-105 transition-all shadow-[0_0_20px_rgba(0,212,255,0.4)]"
               >
                 View My Work
               </a>
@@ -99,47 +97,15 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Visual */}
-          <motion.div 
-            className="lg:col-span-5 hidden lg:flex justify-center items-center relative"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-          >
-            <div className="relative w-full max-w-[400px] aspect-square flex items-center justify-center">
-              {/* Outer rotating ring */}
-              <div className="absolute inset-0 border border-white/10 rounded-full border-t-accent-cyan animate-[spin_10s_linear_infinite]" />
-              <div className="absolute inset-4 border border-white/5 rounded-full border-b-accent-amber animate-[spin_15s_linear_infinite_reverse]" />
-              
-              {/* Center Monogram */}
-              <div className="z-10 text-8xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-br from-accent-cyan to-accent-amber drop-shadow-[0_0_30px_rgba(0,212,255,0.3)]">
-                M
-              </div>
-
-              {/* Orbiting tech badges */}
-              <div className="absolute inset-0 animate-[spin_20s_linear_infinite]">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-3 py-1 bg-bg-card border border-accent-cyan/30 rounded-full text-xs font-code text-accent-cyan animate-[spin_20s_linear_infinite_reverse]">
-                  PyTorch
-                </div>
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 px-3 py-1 bg-bg-card border border-accent-amber/30 rounded-full text-xs font-code text-accent-amber animate-[spin_20s_linear_infinite_reverse]">
-                  Solidity
-                </div>
-                <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 px-3 py-1 bg-bg-card border border-accent-green/30 rounded-full text-xs font-code text-accent-green animate-[spin_20s_linear_infinite_reverse]">
-                  FastAPI
-                </div>
-                <div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 px-3 py-1 bg-bg-card border border-purple-500/30 rounded-full text-xs font-code text-purple-400 animate-[spin_20s_linear_infinite_reverse]">
-                  Kubernetes
-                </div>
-              </div>
-            </div>
-          </motion.div>
+          {/* Right column — empty space for 3D neural globe to show through */}
+          <div className="lg:col-span-5 hidden lg:block" />
 
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <motion.div 
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-text-muted"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-accent-cyan/60"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}

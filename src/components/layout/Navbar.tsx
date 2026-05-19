@@ -17,6 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Venture', href: '#venture' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
   ];

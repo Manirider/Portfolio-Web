@@ -27,9 +27,9 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ number, subtitle, title }) 
         </span>
         <div className="relative inline-block w-fit">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-text-primary tracking-tight">
-            <span className="text-text-muted mr-4">[</span>
+            <span className="text-accent-cyan/30 mr-4">[</span>
             {title}
-            <span className="text-text-muted ml-4">]</span>
+            <span className="text-accent-cyan/30 ml-4">]</span>
           </h2>
           <motion.div
             initial={{ width: 0 }}

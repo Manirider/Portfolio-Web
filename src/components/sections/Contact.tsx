@@ -32,7 +32,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
   return (
     <section id="contact" className="section-padding relative">
       <div className="container-custom">
-        <SectionTitle number="05" subtitle="LET'S BUILD SOMETHING" title="GET IN TOUCH" />
+        <SectionTitle number="06" subtitle="LET'S BUILD SOMETHING" title="GET IN TOUCH" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Column - Contact Info */}
@@ -61,7 +61,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                       <Mail size={20} />
                     </div>
                     <div className="flex flex-col">
-                      <span className="text-xs font-code text-text-muted mb-1">Email</span>
+                      <span className="text-xs font-code text-accent-cyan/60 mb-1">Email</span>
                       <span className="font-medium text-text-primary group-hover:text-accent-cyan transition-colors">{data.email}</span>
                     </div>
                     <ExternalLink size={16} className="ml-auto opacity-0 group-hover:opacity-100 text-accent-cyan transition-opacity" />
@@ -76,7 +76,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                       <Phone size={20} />
                     </div>
                     <div className="flex flex-col">
-                      <span className="text-xs font-code text-text-muted mb-1">Phone</span>
+                      <span className="text-xs font-code text-accent-cyan/60 mb-1">Phone</span>
                       <span className="font-medium text-text-primary group-hover:text-accent-cyan transition-colors">{data.phone}</span>
                     </div>
                     <ExternalLink size={16} className="ml-auto opacity-0 group-hover:opacity-100 text-accent-cyan transition-opacity" />
@@ -94,7 +94,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                           {IconComponent && <IconComponent size={20} />}
                         </div>
                         <div className="flex flex-col">
-                          <span className="text-xs font-code text-text-muted mb-1">{social.name}</span>
+                          <span className="text-xs font-code text-accent-cyan/60 mb-1">{social.name}</span>
                           <span className="font-medium text-text-primary group-hover:text-accent-cyan transition-colors">
                             {social.url.replace('https://', '').replace('www.', '')}
                           </span>
@@ -122,7 +122,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                   <div className="terminal-dot terminal-dot-yellow" />
                   <div className="terminal-dot terminal-dot-green" />
                 </div>
-                <div className="flex-1 text-center font-code text-xs text-text-muted">
+                <div className="flex-1 text-center font-code text-xs text-text-secondary">
                   contact@{data.name.split(' ')[0].toLowerCase()}.dev — bash — 80×24
                 </div>
               </div>
@@ -131,7 +131,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                 <form onSubmit={handleSubmit} className="flex flex-col gap-6 h-full">
                   <div className={`flex flex-col gap-2 transition-opacity ${isFocused && isFocused !== 'name' ? 'opacity-50' : 'opacity-100'}`}>
                     <label htmlFor="name" className="text-accent-cyan flex gap-2">
-                      <span className="text-text-muted">{'>'}</span> name:
+                      <span className="text-accent-cyan/50">{'>'}</span> name:
                     </label>
                     <div className="flex items-center gap-2 text-text-secondary">
                       <span>[</span>
@@ -153,7 +153,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                   
                   <div className={`flex flex-col gap-2 transition-opacity ${isFocused && isFocused !== 'email' ? 'opacity-50' : 'opacity-100'}`}>
                     <label htmlFor="email" className="text-accent-cyan flex gap-2">
-                      <span className="text-text-muted">{'>'}</span> email:
+                      <span className="text-accent-cyan/50">{'>'}</span> email:
                     </label>
                     <div className="flex items-center gap-2 text-text-secondary">
                       <span>[</span>
@@ -175,7 +175,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                   
                   <div className={`flex flex-col gap-2 transition-opacity ${isFocused && isFocused !== 'subject' ? 'opacity-50' : 'opacity-100'}`}>
                     <label htmlFor="subject" className="text-accent-cyan flex gap-2">
-                      <span className="text-text-muted">{'>'}</span> subject:
+                      <span className="text-accent-cyan/50">{'>'}</span> subject:
                     </label>
                     <div className="flex items-center gap-2 text-text-secondary">
                       <span>[</span>
@@ -197,7 +197,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                   
                   <div className={`flex flex-col gap-2 flex-1 transition-opacity ${isFocused && isFocused !== 'message' ? 'opacity-50' : 'opacity-100'}`}>
                     <label htmlFor="message" className="text-accent-cyan flex gap-2">
-                      <span className="text-text-muted">{'>'}</span> message:
+                      <span className="text-accent-cyan/50">{'>'}</span> message:
                     </label>
                     <div className="flex items-start gap-2 text-text-secondary h-full">
                       <span>[</span>
@@ -217,7 +217,7 @@ const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                   </div>
                   
                   <div className="mt-auto pt-4 flex items-center">
-                    <span className="text-text-muted mr-2">{'>'}</span>
+                    <span className="text-accent-cyan/50 mr-2">{'>'}</span>
                     <button 
                       type="submit"
                       className="group flex items-center gap-2 text-accent-cyan hover:text-white transition-colors outline-none focus-visible:text-white"
