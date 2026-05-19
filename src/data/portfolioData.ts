@@ -15,9 +15,9 @@ export const portfolioData: PortfolioData = {
     ],
     tagline: 'Building production-grade AI systems, scalable backends, and decentralized protocols — from Andhra Pradesh to the global tech stage.',
     email: 'smanikanta713@gmail.com',
-    phone: '+91 7893562841',
+    phone: '+91 7893356284',
     location: 'Andhra Pradesh, India',
-    resumeUrl: '#', // TODO: Add resume URL
+    resumeUrl: '/Manikanta_updated_Resume.pdf',
   },
   stats: [
     { label: 'GitHub Commits', value: 171, suffix: '+' },
@@ -27,12 +27,12 @@ export const portfolioData: PortfolioData = {
   ],
   about: {
     paragraphs: [
-      "I'm Manikanta Suryasai Sunkara, an AI/ML Engineer and Full-Stack Developer from Andhra Pradesh, India, currently pursuing B.Tech in Artificial Intelligence and Machine Learning at Aditya College, Surampalem, with a CGPA of 8.80.",
+      "I'm Manikanta Suryasai Sunkara, an AI/ML Engineer and Full-Stack Developer from Andhra Pradesh, India, currently pursuing B.Tech in Artificial Intelligence and Machine Learning at Aditya College of Engineering and Technology, Surampalem, with a CGPA of 8.80.",
       "I specialize in building production-grade machine learning pipelines, NLP systems, and blockchain protocols. From reducing NLP inference to under 50ms on CPU to architecting cross-chain asset bridges with exactly-once delivery guarantees — I build systems that work at scale.",
       "With 31 public repositories and 171+ contributions, I believe in building in public. Every project I ship is production-quality — tested, containerized, monitored, and documented.",
       "Currently, I'm deepening my expertise in LLM alignment, agentic AI systems, and decentralized infrastructure — because the future belongs to engineers who can operate at the intersection of all three."
     ],
-    currentlyBuilding: 'Life OS — a full-stack productivity platform with AI-powered insights',
+    currentlyBuilding: 'Life OS — a full-stack productivity platform startup with AI-powered insights',
     learning: 'LLM fine-tuning, ZK-proofs, Rust',
     openTo: 'AI/ML, Blockchain, Full-Stack roles',
   },
@@ -201,41 +201,39 @@ export const portfolioData: PortfolioData = {
       id: 'intern-anurag',
       role: 'Full-Stack Developer Intern',
       company: 'Anurag IT Solutions',
-      period: 'Jan 2025 — Jun 2025',
-      location: 'Hyderabad, India',
+      period: 'Dec 2023 — Jun 2024',
+      location: 'Rajahmundry, Andhra Pradesh, India',
       type: 'INTERNSHIP',
       highlights: [
-        '5,000+ API requests/day handled',
+        '500+ API requests/day handled',
         '30% response time reduction via query optimization + caching',
-        '3 microservices containerized with Docker (70% faster deployment)',
         '85%+ code coverage with JUnit testing'
       ],
-      techStack: ['Spring Boot', 'Docker', 'JUnit', 'Agile/Scrum'],
+      techStack: ['Spring Boot', 'Full Stack Web Development', 'JUnit', 'Agile/Scrum'],
       badgeColor: 'cyan',
     },
     {
       id: 'intern-apsche',
       role: 'AI/ML Intern',
       company: 'APSCHE (Andhra Pradesh State Council of Higher Education)',
-      period: 'Mar 2024 — Apr 2024',
+      period: 'May 2025 — Jun 2025',
       type: 'INTERNSHIP',
       highlights: [
         '92% F1-Score on validation data',
         'Models: Logistic Regression, Random Forest, XGBoost',
-        'Hyperparameter tuning with Scikit-learn + Optuna',
         'Stakeholder presentations with model performance reporting'
       ],
-      techStack: ['Scikit-learn', 'XGBoost', 'Optuna', 'Python'],
+      techStack: ['Scikit-learn', 'XGBoost', 'IBM Cloud', 'AI'],
       badgeColor: 'amber',
     },
     {
-      id: 'intern-thub',
+      id: 'intern-thub-da',
       role: 'Data Analytics Intern',
-      company: 'THUB (Telangana Hub for Entrepreneurship)',
-      period: 'May 2024 — Jun 2024',
+      company: 'THUB (Technical Hub Pvt.Ltd)',
+      period: 'May 2025 — Jun 2025',
       type: 'INTERNSHIP',
       highlights: [
-        '10+ Power BI dashboards for leadership KPIs',
+        '5+ Power BI dashboards for leadership KPIs',
         '60% reduction in manual reporting effort',
         '50K+ records cleaned and preprocessed'
       ],
@@ -243,14 +241,18 @@ export const portfolioData: PortfolioData = {
       badgeColor: 'green',
     },
     {
-      id: 'edu-btech',
-      role: 'B.Tech in AI/ML',
-      company: 'Aditya College, Surampalem',
-      period: '2024 — Jun 2027 (Expected)',
-      type: 'EDUCATION',
-      highlights: ['CGPA: 8.80/10'],
-      techStack: [],
-      badgeColor: 'purple',
+      id: 'intern-thub-ds',
+      role: 'Data Specialist Intern',
+      company: 'THUB (Technical Hub Pvt.Ltd)',
+      period: 'May 2025 — Apr 2026',
+      type: 'INTERNSHIP', 
+      highlights: [
+        '10+ Power BI dashboards for leadership KPIs',
+        'Microsoft 365 Apps and tools',
+        'Snowflake and PL-600 Microsoft Power Platform Solution Architect'
+      ],
+      techStack: ['Power BI', 'Python', 'SQL', 'Snowflake', 'Data Warehousing', 'Automation Tools'],
+      badgeColor: 'green',
     },
     {
       id: 'edu-diploma',
@@ -259,6 +261,16 @@ export const portfolioData: PortfolioData = {
       period: '2021 — 2024',
       type: 'EDUCATION',
       highlights: ['Percentage: 84%'],
+      techStack: [],
+      badgeColor: 'purple',
+    },
+    {
+      id: 'edu-btech',
+      role: 'B.Tech in AI/ML',
+      company: 'Aditya College of Engineering and Technology, Surampalem',
+      period: '2024 — Jun 2027 (Expected)',
+      type: 'EDUCATION',
+      highlights: ['CGPA: 8.80/10'],
       techStack: [],
       badgeColor: 'purple',
     }
