@@ -1,6 +1,6 @@
 # Manikanta Suryasai Sunkara — Portfolio
 
-**Live Site:** [your-url.vercel.app](https://your-url.vercel.app)
+**Live Site:** https://portfolio-web-rho-nine.vercel.app/
 
 ## About
 Personal portfolio website for Manikanta Suryasai Sunkara — AI/ML Engineer, Full-Stack Developer, and Blockchain Developer. Built to showcase production-grade AI systems, scalable backends, and decentralized protocols.
